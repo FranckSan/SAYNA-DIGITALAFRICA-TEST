@@ -1,3 +1,464 @@
-.bg-red{
-    background-color: #B11313 !important;
+html {
+    margin: 0;
+    padding: 0;
 }
+body{
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    font-family: 'Montserrat', Sans-serif;
+    font-size: 100%;
+    background-color: #B11313;
+    position: relative;
+}
+
+.player{
+    position: absolute;
+    right: 5%;
+    bottom: 10vh;
+    z-index: 222;
+}
+
+
+
+
+/* ---------------------------- HEADER ----------------------------*/
+
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 9vh;
+    padding: 1rem 0;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    background: #B11313;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    width: 80%;
+}
+
+
+.logo{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 20%;
+    cursor: pointer;
+}
+
+ul{
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+    width: 70%;
+    list-style-type: none;
+    margin: 0 0 0.25em 0;
+}
+
+a{
+    text-decoration: none;
+    color: #FFF;
+}
+
+main{
+    background-image: url('illustration/img1.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 100%;
+}
+
+
+/* ---------------------------- END HEADER ----------------------------*/
+
+
+section{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ---------------------------- CARD ----------------------------*/
+
+.heros{
+    margin: 12% 0;
+}
+
+
+
+.crd{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 32%;
+}
+
+.card{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 3%;
+}
+.cd{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.card_text{
+    margin-top: 7%;
+    text-align: justify;
+}
+.card_img{
+    max-width: 100%;
+    height: auto;
+}
+.center{
+    display: flex;
+    justify-content: center;
+    margin-top: 10%;
+}
+
+/* ---------------------------- END CARD ----------------------------*/
+
+
+
+
+/* ---------------------------- SIGN UP ----------------------------*/
+
+.sign_up{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #114C92;
+    padding: 3vh 0;
+    
+}
+
+.sign_up_right{
+    width: 60%;
+}
+
+.sign_up_form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+input{
+    width: 47%;
+    padding: 0.75rem;
+    margin: 1%;
+    padding-left: 1rem;
+    border-radius: 17px;
+    outline: none;
+    border: none;
+}
+
+
+.sign_up_title {
+    text-align: right;
+    margin-right: 17%;
+    margin-bottom: 3%;
+    /* border: 1px solid #fff; */
+}
+
+.align_right{
+    text-align: right;
+}
+
+/* ---------------------------- END SIGN UP ----------------------------*/
+
+
+
+
+/* ---------------------------- NEWSLETTER ----------------------------*/
+
+.newsletter{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    padding-left: 10%;
+    margin: 0 !important;
+    height: 90vh;
+}
+.newsletter_left{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 42%;
+    height: 80%;
+    margin-top: 2%;
+}
+
+.newsletter_right{
+    margin: 0;
+    width: 58%;
+    height: 100%;
+}
+.newsletter_title {
+    text-align: justify;
+}
+.input_4_news {
+    width: 60%;
+    background: transparent;
+    border: 1px solid #FFF;
+}
+.input_4_news:focus{
+    color: #FFF;
+}
+.input_4_news::placeholder{
+    color: #FFF;
+}
+
+.checkbox{
+    display: grid;
+    grid-template-columns: 10% 90%;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 3%;
+}
+
+input[type="checkbox"] {
+    min-height: 20px;
+    margin: 0;
+}
+
+.link {
+    text-decoration: underline;
+}
+
+form> .center{
+    width: 100%;
+}
+.bg{
+    width: 100%;
+    height: 100%;
+}
+
+section,
+.heros {
+    padding-right: 10%;
+    padding-left: 10%;
+}
+
+.bg-red{
+    background-color: #B11313;
+}
+
+/* ---------------------------- END NEWSLETTER ----------------------------*/
+
+
+
+
+/* ---------------------------- TEXT ----------------------------*/
+
+
+ul > li > a {
+    font-size: 1.3vw;
+    font-weight: lighter;
+}
+ul > li > a:hover{
+    font-weight: bold;
+}
+.footer_top > a:hover{
+    font-weight: bold;
+}
+
+h1 {
+    font-weight: normal;
+    font-family: Far From Homecoming, Century Gothic;
+    font-size: 6.6vw;
+    font-weight: normal;
+    margin-bottom: 7%;
+}
+
+h2{
+    font-family: Far From Homecoming, Century Gothic;
+    font-weight: lighter;
+    word-spacing: 7px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    margin-bottom: 1.7%;
+    font-size: 2.3vw;
+}
+
+
+
+section > div > h3 {
+    font-size: 2.3vw;
+}
+
+
+.sign_up_title > h2 {
+    margin: 0;
+}
+
+.newsletter_title > h2 {
+    text-align: start;
+    font-size: 1.75vw;
+    word-spacing: 8px;
+    letter-spacing: 3px;
+}
+
+
+@media (max-width: 780px) {
+
+    h1{
+        margin: 0;
+    }
+
+    section > div > h3 {
+        font-size: 3.2vw;
+    }
+
+    p{
+        margin-bottom: 
+    }
+
+    h2{
+        word-spacing: 3px;
+        text-transform: uppercase;
+        margin-bottom: 4%;
+        font-size: 3.8vw;
+    }
+    .title-p{
+        width: 57%;
+    }
+
+    h2, .title-p {
+        width: 100%;
+        text-align: center;
+        margin: 0;
+    }
+    
+    .newsletter_title > h2, .newsletter_title > p {
+        text-align: center;
+        width: 100%;
+        padding: 0 !important;
+        vertical-align: middle;
+    }
+
+    .newsletter_title > h2 {
+        font-size: 3vw;
+    }
+
+    .sign_up_title > h2 {
+        text-align: center;
+        margin: 0;
+        
+    }
+}
+
+/* ---------------------------- END TEXT ----------------------------*/
+
+
+
+
+/* ---------------------------- BUTTON ----------------------------*/
+
+.banner_btn{
+    margin-bottom: 3%;
+}
+
+
+.btn, .btn_white, .sign_up_btn {
+    padding: 1vw 2vw;
+    border-radius: 13px;
+    text-align: center;
+    font-size: 1.2vw;
+    font-weight: bolder !important;
+    margin-right: 1rem;
+}
+
+.btn_white{
+    color: red;
+    border: 1px solid #FFF;
+    background: #FFF;
+}
+.btn{
+    color: #fff;
+    border: 1px solid #FFF;
+    background: transparent;
+}
+.btn_white:hover{
+    background: transparent;
+    color: #fff;
+}
+.btn:hover{
+    background: #FFF;
+    color: #B11313;
+}
+
+.btn_card{
+    padding: 0.75rem 0.75rem;
+    border-radius: 1rem;
+    text-align: center;
+    margin-right: auto !important;
+    margin-left: auto !important;
+    color: #B11313;
+    border: 1px solid #FFF;
+    background: #FFF;
+}
+.btn_card:hover{
+    background: transparent;
+    color: #fff;
+}
+
+.sign_up_btn{
+    margin: 3% 0;
+    color: #fff;
+    border: 1px solid #FFF;
+    background: transparent;
+}
+.sign_up_btn:hover{
+    color: #114C92;
+    background-color: #FFF;
+    border: 1px solid #FFF;
+}
+
+
+
+
+@media (max-width: 780px) {
+
+    .banner_btn {
+        margin-top: 4%;
+        order: 2;
+    }
+
+    .btn, .btn_white, .sign_up_btn, .btn_card {
+        border-radius: 30px;
+        padding: 2vw 4vw;
+        border-radius: 13px;
+        text-align: center;
+        font-size: 3vw;
+        font-weight: bolder !important;
+        margin-right: 1rem;
+    }
+
+    .center > button {
+        margin-top: 5%;
+    }
+    
+}
+
+/* ---------------------------- END BUTTON ---------------------------- */

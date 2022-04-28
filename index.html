@@ -4,49 +4,560 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/bootstrap.css">
-    <!-- <link rel="stylesheet" href="/css/style.css"> -->
-    <script src="js/bootstrap.bundle.js"></script>
-    <title>Home</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="Typo-FarFromHomecoming.woff2">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="shortcut icon" href="Logo/sayna.png">
+    <script>
+        $(document).ready(function(){
+            if ($(window).height() < "780") {
+
+                $(window).scroll(function(){
+                    if($(window).scrollTop() > '20'){
+                        $("header").css({"background-color":"#B11313"});   
+                    }
+                    else{
+                        $("header").css({"background-color":"transparent"});
+                    }
+    
+                })
+            }
+        })
+    </script>
+    <title>SAYNA x MARVEL</title>
 </head>
 <body>
-    <nav class="navbar navbar-light bg-red">
-        <div class="container-fluid w-75">
-            <a class="navbar-brand border" href="#">
-                <img src="Logo/logo1.png" alt="" class="d-inline-block">
-                <img src="Logo/logo2.png" alt="" class="d-inline-block mx-2">
-                <img src="Logo/logo3.png" alt="" class="d-inline-block">
-            </a>
-            <ul class="nav justify-content-around w-60 border">
-                <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="#">Active</a>
+    <audio class="player" controls autoplay>
+        <source src="audio1.mp3" type="audio/mpeg">
+        Your browser does not support the audio tag.
+    </audio>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="Logo/logo1.png" alt="Logo SANYA">
+                <img src="Logo/logo2.png" width="14" height="20" alt="croix">
+                <img src="Logo/logo3.png" alt="Logo Marvel">
+            </div>
+            <ul>
+                <li>
+                    <a href="#">Accueil</a>
                 </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Link</a>
+                <li>
+                    <a href="#">Adversaires</a>
                 </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Link</a>
+                <li>
+                    <a href="#">Héros</a>
                 </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Disabled</a>
+                <li>
+                    <a href="#">A propos</a>
                 </li>
-              </ul>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section >
+            <h1>SPIDERMAN</h1>
+            <div>
+                <div class="banner_btn">
+                    <button class="btn_white">Voir les Héros</button>
+                    <button href="#" class="btn">Voir les Adversaires</button>
+                </div>
+                <h3>L’araignée sympa du quartier !</h3>
+            </div>
+        </section>
+        <div class="heros">
+            <div>
+                <h2>Les Spidermans au cinéma</h2>
+                <p class="title-p">
+                    Spiderman a pu bénéficier de reboot qui ont permis d’adapter ses histoires
+                    pour chaque génération !
+                </p>
+            </div>
+            <div class="card">
+                <div class="crd card_one">
+                    <div class="cd">
+                        <img src="illustration/img2.png" alt="" class="card_img">
+                        <p class="card_text">
+                            Trois films Spiderman sont sortis en 2002, 2004 et 2007. Ils sont produits par Columbia
+                            Pictures et Spiderman est incarné par Tobey Maguire. Un quatrième était prévu, mais sera
+                            finalement annulé suite à des désaccords entre Sam Raimi (le réalisateur) et Sony.
+                            Cette première trilogie a connu un grand succès auprès des fans et du grand public.
+                            L’épisode 3 reste à ce jour un des films les plus chers de l’histoire du cinéma.
+                        </p>
+                    </div>
+                    <div class="center">
+                        <button href="" class="btn_white">Voir ses adversaires</button>
+                    </div>
+                </div>
+                <div class="crd card_one">
+                    <div class="cd">
+                        <img src="illustration/img3.png" alt="" class="card_img">
+                        <p class="card_text">
+                            The Amazing Spiderman est sorti en 2012, c’est Andrew Garfield qui incarne le héros et
+                            Marc Webb à la réalisation. Un deuxième volet, The Amazing Spider-Man : Le destin d'un
+                            héros, est sorti en 2014 et a reçu des critiques très mitigées. Un troisième et quatrième film
+                            étaient prévus pour 2016 et 2018. Finalement, Marvel et Sony trouvent un accord pour
+                            introduire Spiderman dans l'Univers cinématographique Marvel et abandonne ainsi The
+                            Amazing Spider-Man.
+                        </p>
+                    </div>
+                    <div class="center">
+                        <button href="" class="btn_white">Voir ses adversaires</button>
+                    </div>
+                </div>
+                <div class="crd card_one">
+                    <div class="cd">
+                        <img src="illustration/img4.png" alt="" class="card_img">
+                        <p class="card_text">
+                            Spiderman, désormais incarné par Tom Holland, apparaît pour la première fois dans
+                            l’univers Marvel avec Captain America : Civil War, sorti en 2016. Par la suite, une trilogie de
+                            films lui est consacrée :
+                            Spiderman : Homecoming (2017)
+                            Spiderman : Far From Home (2019)
+                            Spiderman : No Way Home (2021)
+                            Le héro est également présent dans Avengers Infinity War et Avengers End Game,
+                            combattant au côté des Avengers.
+                        </p>
+                    </div>
+                    <div class="center">
+                        <button href="" class="btn_white">Voir ses adversaires</button>
+                    </div>
+                </div>
+            </div>
         </div>
-    </nav>
-    <main class="border border-warning">
-        
+        <div class="sign_up">
+            <div class="sign_up_left">
+                <img src="illustration/img5.png" alt="">
+            </div>
+            <div class="sign_up_right">
+                <div class="sign_up_title">
+                    <h2 class="align_right">Deviens Spiderman !</h2>
+                    <p>Rempli le formulaire ci-dessous afin de recevoir ton propre costume.</p>
+                </div>
+                <form class="sign_up_form" action="">
+                    <input type="text" name="" placeholder="Nom" required>
+                    <input type="text" name="" placeholder="Prenom" required>
+                    <input type="text" name="" placeholder="Taile (cm)" required>
+                    <input type="text" name="" placeholder="Poids (kg)" required>
+                    <input type="text" name="" placeholder="Adresse email" required>
+                    <button type="submit" class="sign_up_btn">Envoyer</button>
+                </form>
+            </div>
+        </div>
+
+        <div class="newsletter">
+            <div class="newsletter_left">
+                <div class="newsletter_title">
+                    <h2>Inscrit toi à la newsletter !</h2>
+                    <p>
+                        L’univers de l’araignée justicière te passionne ? Reste au courant des dernières
+                        actualités grâce à notre newsletter !
+                    </p>
+                </div>
+                <form action="#">
+                    <div class="newsletter_input">
+                        <input class="input_4_news" type="text" name="" placeholder="Nom Prenom" required>
+                        <input class="input_4_news" type="text" name="" placeholder=" Adresse email" required>
+                        <div class="checkbox">
+                            <input type="checkbox" name="" id="checkbox">
+                            <p>
+                                Je reconnais accepter la<br> <a class="link" href="">politique de confidentialité</a>
+                                de Sayna X Marvel.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="center">
+                        <button type="submit" class="btn_white">S'incrire à la newsletter</button>
+                    </div>
+                </form>
+            </div>
+            <div class="newsletter_right">
+                <img src="illustration/img6.png" alt="" class="bg">
+            </div>
+        </div>
     </main>
+    <footer>
+        <div class="footer_top">
+            <a href="#">Mobile app</a>
+            <a href="#">Politique de confidentialité</a>
+            <a href="#">Cookies</a>
+            <div class="logo_footer">
+                <img src="Logo/logo1.png" alt="Logo SANYA">
+                <img src="Logo/logo2.png" width="14" height="20" alt="croix" class="logo_midle">
+                <img src="Logo/logo3.png" alt="Logo Marvel">
+            </div>
+            <a href="#">Contact</a>
+            <a href="#">Blog</a>
+            <select name="" id="lang" >
+                <option class="bg_red">Langue</option>
+            </select>
+        </div>
+        
+        <div class="footer_top_m">
+            <div class="footer_link">
+                <a href="#">Mobile app</a>
+                <a href="#">Politique de confidentialité</a>
+                <a href="#">Cookies</a>
+                <a href="#">Contact</a>
+                <a href="#">Blog</a>
+            </div>
+            <div class="select_box">
+                <select name="" id="lang" >
+                    <option class="bg_red">Langue</option>
+                </select>
+            </div>
+        </div>
+        <div class="logo_footer_m">
+            <img src="Logo/logo1.png" alt="Logo SANYA">
+            <img src="Logo/logo2.png" width="14" height="20" alt="croix" class="logo_midle">
+            <img src="Logo/logo3.png" alt="Logo Marvel">
+        </div>
+
+        <div class="footer_bottom">
+            <div class="box_icon">
+                <img src="Logo/logof.png" alt="" class="icon">
+                <img src="Logo/logoi.png" alt="" class="icon">
+                <img src="Logo/logoy.png" alt="" class="icon">
+                <img src="Logo/logot.png" alt="" class="icon">
+            </div>
+            <p class="">SaynaXMarvel, Inc. 2022. We love our users!</p>
+        </div>
+    </footer>
 </body>
 </html>
 <style>
-    .w-60{
+    
+    * {
+    margin: 0;
+    padding: 0;
+    /* box-sizing: border-box; */
+    /* outline: none; */
+    /* box-shadow: none; */
+    /* scroll-behavior: auto !important; */
+}
+
+    main{
+    background-image: url('illustration/img1.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 100%;
+    padding-top: 17%;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    margin: 0;
+    padding: 4% 0;
+}
+
+.footer_top{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 80%;
+    margin-bottom: 7%;
+}
+.footer_top_m, .logo_footer_m {
+    display: none;
+}
+
+.logo_footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    
+    /* border: 1px solid #fff; */
+}
+
+.logo_midle {
+    margin: 0 4%;
+}
+select {
+    padding: 0.5vw;
+    padding-right: 1vw;
+    border-radius: 13px;
+    width: 17%;
+    color: #fff;
+    font-weight: bold;
+    font-family: 'Montserrat';
+    background-color: #B11313;
+    border: 3px solid #B11313;
+}
+
+.box_icon{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 4%;
+    width: 65%;
+    margin-left: auto;
+    margin-right: auto;
+    cursor: pointer;
+}
+.icon{
+    border-radius: 50%;
+    padding: 7px;
+    background-color: #B11313;
+}
+
+
+p{
+    font-family: 'Montserrat', Century Gothic;
+    font-weight: lighter;
+
+    /* border: 1px solid #fff; */
+}
+
+
+@media (min-width: 992px) {
+    .logo{
+        width: 30%;
+    }
+    
+    ul{
         width: 60%;
     }
-    .bg-red{
-    background-color: #B11313 !important;
 }
-    main{
-        height: 100vh;
 
+
+
+
+@media (max-width: 780px) {
+    /* .logo{
+        width: 30%;
+    } */
+    .player{
+        display: none;
     }
+    header{
+        display: flex;
+        justify-content: flex-start;
+        background: transparent;
+        position: fixed;
+        top: 0;
+        padding: 0;
+        width: 100%;
+    }
+    .nav {
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+
+    section > div > h3 {
+        font-size: 3.2vw;
+    }
+
+    .logo {
+        width: 80%;
+        height: 100%;
+    }
+
+    main{
+        padding-top: 20%;
+    }
+
+
+    
+    ul{
+        display: none;
+    }
+
+
+    section,
+    .heros {
+        padding-right: 7%;
+        padding-left: 7%;
+    }
+
+    section > div {
+        display: flex;
+        flex-direction: column;
+    }
+    
+
+
+
+   
+    
+    
+    .heros {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        /* border: 1px solid #fff; */
+    }
+    .heros > div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        /* border: 1px solid #fff; */
+    }
+
+    
+
+    .card, .crd{
+        width: 100%;
+
+        /* border: 1px solid #fff; */
+    }
+    .card_img {
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .card_text {
+        text-align: center;
+    }
+    .crd {
+        margin-top: 10%;
+    }
+    .center {
+        margin: 0;
+    }
+
+    .sign_up {
+        display: flex;
+        flex-direction: column;
+        background: #114C92;
+        /* border: 1px solid #fff; */
+        /* padding: 10% 0; */
+    }
+    .sign_up_left {
+        display: none;
+    }
+    .sign_up_right {
+        background-image: url('illustration/img5.png');
+        background-repeat: no-repeat;
+        width: 100%;
+        padding: 10% 0;
+        /* border: 1px solid red; */
+    }
+
+    .sign_up_title,
+    .align_right {
+        text-align: center;
+        width: 100%;
+        padding: 0 !important;
+        vertical-align: middle;
+
+        /* border: 1px solid #fff; */
+    }
+
+    
+    .sign_up_form {
+        margin-top: 3%;
+
+        /* border: 1px solid #fff; */
+    }
+    .sign_up_form > input {
+        width: 70%;
+        padding-left: 27px;
+
+        /* border: 1px solid red; */
+    }
+
+
+
+    .newsletter {
+        background-image: url('illustration/img6.png');
+        background-repeat: no-repeat;
+        background-position: 157% 100%;
+        background-size: 60% 80%;
+        padding: 5% 6%;
+        margin: 0;
+        /* padding: 0; */
+
+        /* border: 1px solid blue; */
+    }
+    .newsletter_right {
+        display: none;
+    }
+    .newsletter_left {
+        width: 100%;
+        display: inline-flex;
+    }
+
+    .newsletter_title {
+        margin-bottom: 7%;
+    }
+
+    
+    footer{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 50vh;
+    }
+    .footer_top{
+        display: none;
+    }
+    .footer_top_m{
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        height: 40%;
+        width: 90%;
+    }
+
+
+    .footer_link{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        height: 100%;
+        width: 80%;
+    }
+
+    .footer_top_m > div > a {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 3%;
+
+        /* border: 1px solid red; */
+    }
+    .footer_top_m > div > a:hover{
+        font-weight: bold;
+        /* border: 1px solid red; */
+    }
+
+    .select_box{
+        display: flex;
+        justify-content: flex-end;
+        width: 100%;
+    }
+
+    select{
+        width: 70%;
+    }
+
+    select:focus{
+        outline: none;
+    }
+    .logo_footer_m{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+        cursor: pointer;
+    }
+
+
+}
+
+
+
+
 </style>
